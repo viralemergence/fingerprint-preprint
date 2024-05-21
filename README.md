@@ -1,2 +1,1 @@
-# fingerprint-preprint
-Code for Gibb et al. (2024) 
+Code and public datasets are in the process of being moved over to this repository.
