@@ -1,0 +1,35 @@
+Disease,abbrev,abbrev2,abbrev3,abbrev4,abbrev5,abbrev6,dz_full,dz_class,transmission_route,human_infection_route,zoonotic_reservoir
+Anthrax,Anthrax,Anthrax,Anthrax,Anthrax,Anthrax,Anthrax,Anthrax,Zoonotic,Direct,Wildlife,Mammal (multi-host)
+Argentine haemorrhagic fever,Junin,Junin,Junin,Junin,AHF,AHF,Argentine haemorrhagic fever,Zoonotic,Direct,Wildlife,Rodent
+Brazilian spotted fever,BSF,Brazil spotted,Brazilian spotted fever,BSF,BSF,BSF,Brazilian spotted fever,Zoonotic + vector-borne,Vector (tick),Wildlife + vector,Mammal (multi-host)
+Chagas disease (acute),Chagas,Chagas,Chagas disease,Chagas,Chagas,Chagas (acute),Chagas disease (acute),Zoonotic + vector-borne,Vector (other),Wildlife + vector,Mammal (multi-host)
+Chikungunya,CHIK,Chikungunya,Chikungunya,Chikungunya,Chikungunya,Chikungunya,Chikungunya,Vector-borne,Vector (mosquito),Vector,Mosquito
+Crimean-Congo haemorrhagic fever,CCHF,CCHF,CCHF,CCHF,CCHF,CCHF,Crimean-Congo haemorrhagic fever,Zoonotic + vector-borne,Vector (tick),Wildlife + vector,Mammal (multi-host)
+Dengue,Dengue,Dengue,Dengue,Dengue,Dengue,Dengue,Dengue,Vector-borne,Vector (mosquito),Vector,Mosquito
+Eastern equine encephalitis,EEE,EEE,Eastern equine encephalitis,EEE,EEE,EEE,Eastern equine encephalitis,Zoonotic + vector-borne,Vector (mosquito),Wildlife + vector,Bird
+Ebola virus disease,Ebola,Ebola,Ebola,Ebola,Ebola,Ebola,Ebola virus disease,Zoonotic,Direct,Wildlife,Bat
+Hantavirus cardiopulmonary syndrome,Hanta,Hantavirus,Hantavirus ,Hantavirus,Hantavirus,HCPS,Hantavirus cardiopulmonary syndrome,Zoonotic,Direct,Wildlife,Rodent
+Hendra virus disease,Hendra,Hendra,Hendra ,Hendra ,Hendra ,Hendra ,Hendra virus disease,Zoonotic,Direct,Wildlife,Bat
+Influenza H5N1,H5N1,H5N1,Influenza A H5N1,H5N1,Influenza H5N1,Influenza (H5N1),Influenza A subtype H5N1,Zoonotic,Direct,Wildlife,Bird
+Jamestown Canyon virus disease,JAC,J. Canyon,Jamestown Canyon,J. Canyon,J. Canyon,JCE,Jamestown Canyon virus disease,Zoonotic + vector-borne,Vector (mosquito),Wildlife + vector,Mammal (multi-host)
+Japanese encephalitis,JE,Japanese enceph.,Japanese encephalitis,JE,JE,JE,Japanese encephalitis,Zoonotic + vector-borne,Vector (mosquito),Wildlife + vector,Bird
+LaCrosse encephalitis,LAC,LaCrosse,LaCrosse encephalitis,LaCrosse,LaCrosse,LE,LaCrosse encephalitis,Zoonotic + vector-borne,Vector (mosquito),Wildlife + vector,Mammal (multi-host)
+Lassa fever,Lassa,Lassa,Lassa fever,Lassa,Lassa,Lassa,Lassa fever,Zoonotic,Direct,Wildlife,Rodent
+Leptospirosis,Lepto,Leptospirosis,Leptospirosis,Lepto,Lepto,Lepto,Leptospirosis,Zoonotic,Environment,Wildlife,Rodent
+Lyme disease,Lyme,Lyme,Lyme disease,Lyme,Lyme,Lyme,Lyme disease,Zoonotic + vector-borne,Vector (tick),Wildlife + vector,Mammal (multi-host)
+Marburg virus disease,Marburg,Marburg,Marburg,Marburg,Marburg,Marburg,Marburg virus disease,Zoonotic,Direct,Wildlife,Bat
+Mayaro virus disease,Mayaro,Mayaro,Mayaro,Mayaro,Mayaro,Mayaro,Mayaro virus disease,Zoonotic + vector-borne,Vector (mosquito),Wildlife + vector,Mammal (multi-host)
+Melioidosis,Melioidosis,Melioidosis,Melioidosis,Melioidosis,Melioidosis,Melioidosis,Melioidosis,Environmental,Environment,Environment,Environment
+Middle East respiratory syndrome (MERS),MERS,MERS,MERS,MERS,MERS,MERS,Middle East respiratory syndrome,Zoonotic,Direct,Wildlife,Bat
+Monkeypox,Mpox,Mpox,Mpox,Mpox,Mpox,Mpox,Mpox,Zoonotic,Direct,Wildlife,Rodent
+Nipah virus disease,Nipah,Nipah,Nipah,Nipah,Nipah,Nipah,Nipah virus disease,Zoonotic,Direct,Wildlife,Bat
+Oropouche fever,Oropouche,Oropouche,Oropouche,Oropouche,Oropouche,Oropouche,Oropouche fever,Zoonotic + vector-borne,Vector (mosquito),Wildlife + vector,Mammal (multi-host)
+Plague,Plague,Plague,Plague,Plague,Plague,Plague,Plague,Zoonotic + vector-borne,Vector (other),Wildlife + vector,Rodent
+Plasmodium knowlesi malaria,P. knowlesi,P. knowlesi,Plasmodium knowlesi,P. knowlesi,P. knowlesi,Zoonotic malaria,Zoonotic malaria,Zoonotic + vector-borne,Vector (mosquito),Wildlife + vector,Primate
+Powassan virus disease,Powassan,Powassan,Powassan,Powassan,Powassan,Powassan,Powassan encephalitis,Zoonotic + vector-borne,Vector (tick),Wildlife + vector,Mammal (multi-host)
+Rift Valley Fever,RVF,Rift Valley,Rift Valley Fever,RVF,RVF,RVF,Rift Valley fever,Zoonotic + vector-borne,Vector (mosquito),Vector,Mammal (multi-host)
+St. Louis encephalitis,SLE,SLE,St. Louis encephalitis,SLE,SLE,SLE,St. Louis encephalitis,Zoonotic + vector-borne,Vector (mosquito),Wildlife + vector,Bird
+West Nile virus disease,WNV,West Nile,West Nile,West Nile,West Nile,West Nile,West Nile virus disease,Zoonotic + vector-borne,Vector (mosquito),Wildlife + vector,Bird
+Yellow fever,YF,Yellow fever,Yellow fever,YF,YF,Yellow fever,Yellow fever,Zoonotic + vector-borne,Vector (mosquito),Wildlife + vector,Primate
+Zika,Zika,Zika,Zika,Zika,Zika,Zika,Zika fever,Vector-borne,Vector (mosquito),Vector,Mosquito
+SARS-related coronaviruses,SARS-CoVs,SARS-CoVs,SARS-CoVs,SARS-CoVs,SARS-CoVs,SARS-CoVs,SARS-related coronaviruses,Zoonotic,Direct,Wildlife,Bat

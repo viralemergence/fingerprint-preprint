@@ -1,0 +1,17 @@
+driver_code,driver,abbrev1,abbrev2,abbrev3
+urban_cover,Built-up land,Built,Urban,Urban
+health_travel_log,Healthcare travel time (log),Health,Health,Health\ntravel
+evi_dissimilarity,Vegetation heterogeneity,Het,VegHet,Veg\nhet
+forest_cover,Forest cover,Forest,Forest,Forest
+biodiv_intact,Biodiversity Intactness,Biodiv,Biodiv,Biodiv
+forest_loss,Forest loss,FL,ForLoss,Forest\nLoss
+precip_change,Precipitation change,Precip,Precip,Precip\nchange
+protected_areas,Protected area coverage,PA,PA,Prot.\narea
+crop_cover,Cropland cover,Crop,Crop,Crop
+livestock_log,Livestock density (log),Live,Livestock,Livestock
+tmean_change,Temperature change,Temp,Temp,Temp\nchange
+crop_expansion,Cropland expansion,Cropx,Cexp,Crop\nexp.
+social_vulnerability,Social vulnerability,Vul,Vul,Social\nvul
+hunting,Hunting pressure,Hunt,Hunting,Hunting
+urban_expansion,Urban expansion,Urbx,Uexp,Urban\nexp.
+mining,Mining,Min,Mining,Mining

@@ -1,0 +1,22 @@
+cov,description
+biodiv_intact,Mean local Biodiversity Intactness Index
+crop_cover,Proportion cropland cover 2015 from Coperncius 100m fractional land cover
+crop_expansion,Proportion area experiencing net cropland expansion between 2000 and 2019 from GLAD (Global Cropland Expansion)
+evi_coefvar,Landscape heterogeneity 1: Variance (coefficient of variation) in peak EVI (2001-2005) among all 250m pixels
+evi_dissimilarity,Landscape heterogeneity 2: Second-order dissimilarity in peak EVI (2001-2005) among all 250m pixels
+forest_cover,Proportion forest cover 2015 from Coperncius 100m fractional land cover
+forest_loss,Proportion area experiencing tree cover loss between 2000 and 2019 from Global Forest Change (Hansen)
+health_travel,Mean motorised travel time to the nearest health centre
+hunting,Hunting-driven defaunation index for mammals (tropical forest biomes only)
+livestock_all,"Mean density of livestock (cattle, sheep, goats, buffalo, pigs) in animals per km2 2010, from Gridded Livestock of the World v3"
+mining,"Proportion of area under mining land use, mapped using Sentinel imagery for 10km buffers around all sites in the global SNL Metals & Mining database"
+precip,Mean annual precipitation
+precip_anomaly,Mean standardised annual precipitation anomaly 1991-2020 (compared to baseline 1950-1990) from ERA5-Land
+precip_change,Difference in annual precipitation 2001-2020 from baseline 1950-1960
+protected_areas,Proportion area under area-based conservation protection (from World Database of Protected Areas)
+social_vulnerability,Global Relative Deprivation Index from CIESIN (beta Sept 2022)
+tmean,Mean annual temperature
+tmean_anomaly,Mean standardised annual mean temperature anomaly 1991-2020 (compared to baseline 1950-1990) from ERA5-Land
+tmean_change,Difference in annual mean temperature 2001-2020 from baseline 1950-1960
+urban_cover,Proportion built-up cover 2015 from Coperncius 100m fractional land cover
+urban_expansion,Proportion area experiencing built-up land expansion 2000-2019 from ESA-CCI Land Cover
