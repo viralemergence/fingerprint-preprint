@@ -1,6 +1,6 @@
-## Code pipeline for Gibb et al, "The anthropogenic fingerprint on emerging infectious diseases".
+# Code pipeline for Gibb et al, "The anthropogenic fingerprint on emerging infectious diseases".
 
-Code is contained within the "scripts" folder and stored within 5 subfolders: 
+## Code is contained within the "scripts" folder and stored within 5 subfolders: 
  
  ↳ 00_hypothesis_exercise → Scripts to process coauthor-completed hypothesis exercise
  
@@ -12,9 +12,12 @@ Code is contained within the "scripts" folder and stored within 5 subfolders:
  
  ↳ 04_results → Scripts to summarise across models and output figures and key results
 
-Publically-shareable disease datasets (i.e. open datasets) will be moved over to this repository.
-
-Model outputs for each disease (csvs of fitted posterior parameter estimates) for individual disease models are stored in "outputs" folder.
+## Model outputs for each disease (csvs of fitted posterior parameter estimates) for individual disease models are stored in "outputs" folder.
 
  ↳ output → model_outputs → disease_params
 
+## Publically-shareable disease datasets (i.e. open datasets) will be moved over to this repository.
+
+## Contact information
+
+For enquiries contact Rory Gibb (rory.gibb.14@ucl.ac.uk).
