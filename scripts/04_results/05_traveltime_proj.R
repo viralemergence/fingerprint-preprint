@@ -1,9 +1,12 @@
 
 
+
 # ============ Examining effects of travel time to healthcare ===============
 
-setwd("C:/Users/roryj/Documents/Research/projects_current/202011_fingerprint/fingerprint/")
-library(raster); library(rgdal); library(dplyr); library(magrittr); library(ggplot2); library(sf); library(reticulate); library(rgee)
+PATH = dirname(dirname(dirname(rstudioapi::getSourceEditorContext()$path)))
+setwd(PATH)
+
+library(raster); library(dplyr); library(magrittr); library(ggplot2); library(sf); library(reticulate); library(rgee)
 library(INLA)
 source("./scripts/00_plot_themes.R")
 
@@ -29,7 +32,7 @@ pp = pp %>%
                 param = replace(param, param == "forest_loss", "Forest loss"),
                 param = replace(param, param == "health_travel", "Healthcare travel time"),
                 param = replace(param, param == "crop_expansion", "Cropland expansion"),
-                param = replace(param, param == "evi_dissimilarity", "Vegetation heterogeneity"),
+                param = replace(param, param == "evi_dissimilarity", "Landscape heterogeneity"),
                 param = replace(param, param == "urban_expansion", "Urban expansion"),
                 param = replace(param, param == "urban_cover", "Urban cover"),
                 param = replace(param, param == "crop_cover", "Cropland cover"),
@@ -41,36 +44,12 @@ pp = pp %>%
                 param = replace(param, param == "protected_areas", "Protected area cover"),
                 param = replace(param, param == "popdens_log", "Population density (log)")) 
 
-# # add NAs for non-modelled vars
-# pp = pp %>% dplyr::select(param, Disease, type, mean, sig, Num_observations)
-# add_nas = expand.grid(unique(pp$param), unique(pp$Disease), unique(pp$type)) %>%
-#   as.data.frame() %>%
-#   dplyr::rename("param" = 1, "Disease"=2, "type"=3) %>%
-#   dplyr::mutate(sig = NA, mean = NA) %>% 
-#   dplyr::left_join(pp %>% dplyr::select(Disease, Num_observations) %>% distinct())
-# add_nas = add_nas[ ! paste(add_nas$param, add_nas$Disease, add_nas$type, sep="_") %in% paste(pp$param, pp$Disease, pp$type, sep="_"), ]
-# pp = rbind(pp, add_nas)
-
-
-# # order by n points
-# np = pp %>% dplyr::select(Disease, Num_observations) %>% dplyr::arrange(Num_observations) %>% distinct()
-# pp$Disease = factor(pp$Disease, levels = np$Disease, ordered=TRUE)
-
 
 # ============== subset ===============
 
 htt = pp %>% dplyr::filter() %>%
   dplyr::filter(type == "Causal (strict)") %>%
   dplyr::filter(param == "Healthcare travel time")
-
-# htt %>%
-#   ggplot() + 
-#   geom_point(aes(Disease, mean)) + 
-#   geom_linerange(aes(Disease, ymin=lower, ymax=upper)) +
-#   theme_classic() + 
-#   geom_hline(lty=2, yintercept=0) + 
-#   coord_flip()
-
 
 
 # ============ for each disease read in data =============
@@ -100,7 +79,7 @@ for(i in loc){
   
   d_i = data.frame(
     dz = i,
-    sc = sc,
+    #sc = sc,
     mindist = mindist,
     meandist = meandist,
     maxdist = maxdist,
@@ -160,57 +139,75 @@ htt = htt %>% dplyr::filter(Disease != "SLE")
 
 # order of dz points
 #fac_order = htt %>% dplyr::arrange(desc(mean)) %>% dplyr::select(abbrev6) 
-fac_order = htt %>% dplyr::arrange(mean) %>% dplyr::select(abbrev6) 
+fac_order = htt %>% dplyr::arrange(mean) %>% dplyr::select(abbrev6) %>%
+  dplyr::mutate(abbrev6 = factor(abbrev6, levels=fac_order$abbrev6, ordered=TRUE),
+                abb_cd = as.numeric(abbrev6)) 
 
 # parameter estimates
 htt_params = htt %>%
-  dplyr::mutate(abbrev6 = factor(abbrev6, levels=fac_order$abbrev6, ordered=TRUE)) %>%
+  dplyr::mutate(abbrev6 = factor(abbrev6, levels=fac_order$abbrev6, ordered=TRUE),
+                abb_cd = as.numeric(abbrev6)) %>%
   ggplot() + 
-  geom_linerange(aes(abbrev6, ymin=(exp(lower)-1)*100, ymax=(exp(upper)-1)*100), color=viridis::viridis(200)[100]) +
-  geom_point(aes(abbrev6, (exp(median)-1)*100), color=viridis::viridis(200)[80], size=2) + 
-  theme_classic() + 
   geom_hline(lty=2, yintercept=0) + 
-  theme(panel.grid.major = element_line(color="grey95")) +
+  geom_vline(xintercept=seq(0.5, nrow(fac_order)+0.5), linewidth=0.2, color="grey85") +
+  geom_linerange(aes(abb_cd, ymin=(exp(lower)-1)*100, ymax=(exp(upper)-1)*100), color=viridis::viridis(200)[90], linewidth=0.7) +
+  geom_point(aes(abb_cd, (exp(median)-1)*100), color=viridis::viridis(200)[90], size=2.5) +
+  scale_x_continuous(breaks=1:length(fac_order$abb_cd), labels=fac_order$abbrev6, limits = c(0.5, length(fac_order$abbrev6)+0.5)) +
+  # geom_linerange(aes(abbrev6, ymin=(exp(lower)-1)*100, ymax=(exp(upper)-1)*100), color=MetBrewer::met.brewer("Archambault", 2)[1], alpha=0.5) +
+  # geom_point(aes(abbrev6, (exp(median)-1)*100), color=MetBrewer::met.brewer("Archambault", 2)[1], size=2, alpha=0.5) + 
+  theme_classic() + 
+  #theme(panel.grid.major.y = element_line(color="grey90")) +
   coord_flip() + 
   theme(axis.title = element_text(size=11), 
-        axis.text = element_text(size=10)) +
+        axis.text = element_text(size=10),
+        axis.line.y = element_blank(),
+        axis.ticks.y = element_line(color="grey70")) +
   ylab("% change in odds of outbreak report per\nadditional hour's travel time to health facility") +
   xlab("Disease")
 
 # descriptive
 outbreak_vs_background = htt %>%
-  dplyr::filter(Disease != "SLE") %>% # uncertainty too high for viz
-  dplyr::mutate(abbrev6 = factor(abbrev6, levels=fac_order$abbrev6, ordered=TRUE)) %>% 
-  dplyr::select(abbrev6, median_tt_bg, median_tt_pres) %>%
-  dplyr::rename("Background"=2, "Outbreak"=3) %>%
-  reshape2::melt(id.vars=1) %>%
+  dplyr::mutate(abbrev6 = factor(abbrev6, levels=fac_order$abbrev6, ordered=TRUE),
+                abb_cd = as.numeric(abbrev6)) %>%
+  dplyr::select(abbrev6, abb_cd, median_tt_bg, median_tt_pres) %>%
+  dplyr::rename("Background"=3, "Outbreak"=4) %>%
+  reshape2::melt(id.vars=1:2) %>%
   dplyr::mutate(variable = ifelse(variable == "Background", "Background\nlocations", "Outbreak\nlocations")) %>%
   ggplot() + 
-  geom_bar(aes(abbrev6, value/60, group=variable, fill=variable), width=0.45, color=NA, stat="identity", position=position_dodge(width=0.58)) + 
+  geom_bar(aes(abb_cd, value/60, group=variable, fill=variable), width=0.5, color=NA, stat="identity", position=position_dodge(width=0.65), alpha=0.9) + 
+  geom_vline(xintercept=seq(0.5, nrow(fac_order)+0.5), linewidth=0.2, color="grey85") +
   theme_classic() + 
-  theme(panel.grid.major = element_line(color="grey95")) +
-  coord_flip() + 
+  #theme(panel.grid.major.y = element_line(color="grey95")) +
+  scale_x_continuous(breaks=1:length(fac_order$abb_cd), labels=fac_order$abbrev6, limits = c(0.5, length(fac_order$abbrev6)+0.5)) +
   ylab("Median motorized travel time\nto health facility (hours)") +
   xlab("Disease") +
   theme(#legend.position = c(0.82, 0.16),
         legend.position = c(0.85, 0.8),
-        legend.background = element_blank(),
+        legend.background = element_rect(fill="white"),
         legend.title = element_blank(),
         legend.text = element_text(size=7.5),
         axis.title = element_text(size=11), 
         axis.text = element_text(size=10),
         axis.text.y = element_blank(), 
-        axis.title.y = element_blank()) + 
-  scale_fill_viridis_d(begin=0.3, end=0.7, direction=-1, guide = guide_legend(reverse = TRUE, override.aes = list(size=2)))
+        axis.title.y = element_blank(),
+        axis.line.y = element_blank(),
+        axis.ticks.y = element_blank()) + 
+  coord_flip() + 
+  scale_fill_manual(values=rev(pals::brewer.brbg(100)[c(20, 80)]), guide = guide_legend(reverse = TRUE, override.aes = list(size=2)))
+  #scale_fill_viridis_d(begin=0.3, end=0.7, direction=-1, guide = guide_legend(reverse = TRUE, override.aes = list(size=2)))
 
 # % background locations over 2 hours away
 tt_ests = htt %>%
-  dplyr::mutate(abbrev6 = factor(abbrev6, levels=fac_order$abbrev6, ordered=TRUE)) %>%
+  dplyr::mutate(abbrev6 = factor(abbrev6, levels=fac_order$abbrev6, ordered=TRUE),
+                abb_cd = as.numeric(abbrev6)) %>%
   ggplot() +
-  geom_bar(aes(abbrev6, percent_over_2hr*100), width=0.35, color=NA, fill=pals::kovesi.rainbow(200)[150], stat="identity", position=position_dodge(width=0.75)) +
+  #geom_bar(aes(abb_cd, percent_over_2hr*100), width=0.25, color=NA, fill=pals::kovesi.rainbow(200)[150], stat="identity", position=position_dodge(width=0.75)) +
+  geom_bar(aes(abb_cd, percent_over_2hr*100), width=0.25, color=NA, fill="grey50", stat="identity", position=position_dodge(width=0.75)) +
+  geom_vline(xintercept=seq(0.5, nrow(fac_order)+0.5), linewidth=0.2, color="grey85") +
+  scale_x_continuous(breaks=1:length(fac_order$abb_cd), labels=fac_order$abbrev6, limits = c(0.5, length(fac_order$abbrev6)+0.5)) +
   #geom_bar(aes(abbrev6, prop_pop*100, group=type, fill=type), width=0.65, color=NA, stat="identity", position=position_dodge(width=0.75)) +
   theme_classic() +
-  theme(panel.grid.major = element_line(color="grey95")) +
+  #theme(panel.grid.major = element_line(color="grey95")) +
   coord_flip() +
   ylab("% locations\n>2 hours away") +
   xlab("Disease") +
@@ -222,62 +219,19 @@ tt_ests = htt %>%
         axis.title = element_text(size=11),
         axis.text = element_text(size=10),
         axis.text.y = element_blank(),
-        axis.title.y = element_blank()) +
+        axis.title.y = element_blank(),
+        axis.line.y = element_blank(),
+        axis.ticks.y = element_blank()) +
   scale_fill_viridis_d(begin=0.3, end=0.7, direction=1, guide = guide_legend(reverse = TRUE), option="magma")
 
-# next two are % of population
-# tt_ests1 has both motorized and nonmotorized
-# tt_ests = res %>%
-#   dplyr::filter(abbrev6 %in% htt$abbrev6) %>%
-#   dplyr::mutate(abbrev6 = factor(abbrev6, levels=fac_order$abbrev6, ordered=TRUE)) %>% 
-#   ggplot() + 
-#   #geom_bar(aes(abbrev6, prop_pop*100), width=0.65, color=NA, fill="coral1", stat="identity", position=position_dodge(width=0.75)) + 
-#   geom_bar(aes(abbrev6, prop_pop*100, group=type, fill=type), width=0.65, color=NA, stat="identity", position=position_dodge(width=0.75)) + 
-#   theme_classic() + 
-#   theme(panel.grid.major = element_line(color="grey95")) +
-#   coord_flip() + 
-#   ylab("% population\n>2 hours away") +
-#   xlab("Disease") +
-#   theme(legend.position = c(0.82, 0.16), 
-#         legend.background = element_blank(),
-#         legend.title = element_blank(),
-#         legend.text = element_text(size=7.5),
-#         axis.title = element_text(size=11), 
-#         axis.text = element_text(size=10),
-#         axis.text.y = element_blank(), 
-#         axis.title.y = element_blank()) + 
-#   scale_fill_viridis_d(begin=0.3, end=0.7, direction=1, guide = guide_legend(reverse = TRUE), option="magma")
 # 
-# # just motorized
-# tt_ests = res %>%
-#   dplyr::filter(type == "motorized") %>%
-#   dplyr::filter(abbrev6 %in% htt$abbrev6) %>%
-#   dplyr::mutate(abbrev6 = factor(abbrev6, levels=fac_order$abbrev6, ordered=TRUE)) %>% 
-#   ggplot() + 
-#   geom_bar(aes(abbrev6, prop_pop*100), width=0.35, color=NA, fill=pals::parula(200)[140], stat="identity", position=position_dodge(width=0.75)) + 
-#   #geom_bar(aes(abbrev6, prop_pop*100, group=type, fill=type), width=0.65, color=NA, stat="identity", position=position_dodge(width=0.75)) + 
-#   theme_classic() + 
-#   theme(panel.grid.major = element_line(color="grey95")) +
-#   coord_flip() + 
-#   ylab("% population\n>1 hour away") +
-#   xlab("Disease") +
-#   theme(legend.position = c(0.82, 0.16), 
-#         legend.background = element_blank(),
-#         legend.title = element_blank(),
-#         legend.text = element_text(size=7.5),
-#         axis.title = element_text(size=11), 
-#         axis.text = element_text(size=10),
-#         axis.text.y = element_blank(), 
-#         axis.title.y = element_blank()) + 
-#   scale_fill_viridis_d(begin=0.3, end=0.7, direction=1, guide = guide_legend(reverse = TRUE), option="magma")
-
-pc = gridExtra::grid.arrange(htt_params, outbreak_vs_background, tt_ests, ncol=3, widths=c(1, 0.8, 0.3))
+pc = gridExtra::grid.arrange(htt_params, outbreak_vs_background, tt_ests, ncol=3, widths=c(1, 0.7, 0.3))
 pc = ggpubr::as_ggplot(pc)  +
   cowplot::draw_plot_label(label = c("a", "b", "c"), 
                            fontface = "plain", size = 22, 
-                           x = c(0.01, 0.45, 0.835), y = c(1, 1, 1))
+                           x = c(0.01, 0.49, 0.835), y = c(1, 1, 1))
 
-ggsave(pc, file="./output/plots/Figure5_TravelTimeProj.jpg", device="jpg", units="in", width=11.5, height=4.4, dpi=900, scale=0.85)
+ggsave(pc, file="./output/plots/Figure5_TravelTimeProj.jpg", device="jpg", units="in", width=11.5, height=6, dpi=900, scale=0.85)
 
 
 

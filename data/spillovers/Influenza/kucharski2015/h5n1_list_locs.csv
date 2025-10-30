@@ -1,0 +1,183 @@
+Country,District,Province,GADM_code,GADM_level,data_type,geo_data
+,,Hai Phong,VNM.23_1,1,polygon,KHM_shapefile
+,,Hanoi,VNM.27_1,1,polygon,KHM_shapefile
+Cambodia,,Banteay Meanchey,KHM.1_1,1,polygon,KHM_shapefile
+Cambodia,Malay,Banteay Meanchey,KHM.1.1_2,2,polygon,KHM_shapefile
+Cambodia,Mongkul Borei,Banteay Meanchey,KHM.1.2_2,2,polygon,KHM_shapefile
+Cambodia,Phnom Prek,Battambang,KHM.2.8_2,2,polygon,KHM_shapefile
+Cambodia,Sang Ke,Battambang,KHM.2.13_2,2,polygon,KHM_shapefile
+Cambodia,Kampot,Dorng Tung,KHM.7.5_2,2,polygon,KHM_shapefile
+Cambodia,Cheung Prey,Kampong Cham,KHM.3.3_2,2,polygon,KHM_shapefile
+Cambodia,Ponhea Kreak,Kampong Cham,KHM.25.5_2,2,polygon,KHM_shapefile
+Cambodia,Stung Treng,Kampong Cham,KHM.3.10_2,2,polygon,KHM_shapefile
+Cambodia,,Kampong Chhnang,KHM.4_1,1,polygon,KHM_shapefile
+Cambodia,,Kampong Speu,KHM.5_1,1,polygon,KHM_shapefile
+Cambodia,Kong Pisey,Kampong Speu,KHM.5.4_2,2,polygon,KHM_shapefile
+Cambodia,Thpong,Kampong Speu,KHM.5.8_2,2,polygon,KHM_shapefile
+Cambodia,Baray,Kampong Thom,KHM.6.1_2,2,polygon,KHM_shapefile
+Cambodia,,Kampot,KHM.7_1,1,polygon,KHM_shapefile
+Cambodia,Banteay Meas,Kampot,KHM.7.2_2,2,polygon,KHM_shapefile
+Cambodia,Kampong Bay,Kampot,KHM.7.7.2_2,3,polygon,KHM_shapefile
+Cambodia,Thek Chhou,Kampot,KHM.7.8_2,2,polygon,KHM_shapefile
+Cambodia,,Kandal,KHM.8_1,1,polygon,KHM_shapefile
+Cambodia,Kandal Stueng,Kandal,KHM.8.2_2,2,polygon,KHM_shapefile
+Cambodia,Saang,Kandal,KHM.8.10_2,2,polygon,KHM_shapefile
+Cambodia,Kampong Speu,Phnom Penh,,,,KHM_shapefile
+Cambodia,Khan Por Sen Chey,Phnom Penh,KHM.16.9_2,2,polygon,KHM_shapefile
+Cambodia,Khan Russey Keo,Phnom Penh,KHM.16.10_2,2,polygon,KHM_shapefile
+Cambodia,Russey Keo,Phnom Penh,KHM.16.10_2,2,polygon,KHM_shapefile
+Cambodia,,Prey Veng,KHM.19_1,1,polygon,KHM_shapefile
+Cambodia,Kampong Trabek,Prey Veng,KHM.19.3_2,2,polygon,KHM_shapefile
+Cambodia,Pea Reang,Prey Veng,KHM.19.6_2,2,polygon,KHM_shapefile
+Cambodia,Bakane,Pursat,KHM.17.1_2,2,polygon,KHM_shapefile
+Cambodia,Kampong Speu,Samrong Tong,KHM.5.7_2,2,polygon,KHM_shapefile
+Cambodia,Pailin,Steung Trang,KHM.12.2.4_2,3,polygon,KHM_shapefile
+Cambodia,Traing,Takeo,KHM.24.10_2,2,polygon,KHM_shapefile
+Cambodia,Prey Kabbas,Takev,KHM.24.7_2,2,polygon,KHM_shapefile
+Cambodia ,Cheung Prey,Kampong Cham,KHM.3.3_2,2,polygon,KHM_shapefile
+Cambodia ,Ponhea Krek,Kampong Cham,KHM.25.5_2,2,polygon,KHM_shapefile
+Cambodia ,Rolea Pa Ear,Kampong Chnnang,KHM.4.6_2,2,polygon,KHM_shapefile
+Cambodia ,Santuk,Kampong Thom,KHM.6.6_2,2,polygon,KHM_shapefile
+Cambodia ,Banteay Meas,Kampot,KHM.7.2.1_2,3,polygon,KHM_shapefile
+Cambodia ,LeukNADek,Kandal,KHM.8.6_2,2,polygon,KHM_shapefile
+Cambodia ,Snourl,Kratie,KHM.11.6_2,2,polygon,KHM_shapefile
+Cambodia ,Khan PorNASenChey,Phnom Penh,KHM.16.9_2,2,polygon,KHM_shapefile
+China,,Anhui,CHN.1_1,1,polygon,CHN_shapefile
+China,Tunxi,Anhui,CHN.1.11.4_1,3,polygon,CHN_shapefile
+China,Chaoyang,Beijing,,,point,CHN_shapefile
+China,,Fujian,CHN.4_1,1,polygon,CHN_shapefile
+China,Jian'ou,Fujian,CHN.4.3.3_1,3,polygon,CHN_shapefile
+China,,Guangdong,CHN.6_1,1,polygon,CHN_shapefile
+China,Shanwei,Guangdong,CHN.6.13_1,2,polygon,CHN_shapefile
+China,Shenzhen,Guangdong,CHN.6.15_1,2,polygon,CHN_shapefile
+China,Beiliu,Guangxi,CHN.7.14.1_1,3,polygon,CHN_shapefile
+China,Xixiangtang,Guangxi,,,point,CHN_shapefile
+China,Guiyang,Guizhou,CHN.8.3_1,2,polygon,CHN_shapefile
+China,,Hong Kong,CHN.HKG,1,polygon,CHN_shapefile
+China,,Hubei,CHN.13_1,1,polygon,CHN_shapefile
+China,Wuhan,Hubei,CHN.13.12_1,2,polygon,CHN_shapefile
+China,,Hunan,CHN.14_1,1,polygon,CHN_shapefile
+China,Huaihua,Hunan,CHN.14.5_1,2,polygon,CHN_shapefile
+China,Jianghua,Hunan,CHN.14.11.2_1,3,polygon,CHN_shapefile
+China,Xupu County,Hunan,CHN.14.5.10_1,3,polygon,CHN_shapefile
+China,,Jiangsu,CHN.15_1,1,polygon,CHN_shapefile
+China,Guizhou,NA,CHN.8_1,1,polygon,CHN_shapefile
+China,Jinan,Shandong,CHN.23.5_1,2,polygon,CHN_shapefile
+China,,Shanghai,CHN.24_1,1,polygon,CHN_shapefile
+China,Luliang,Shanxi,CHN.25.6_1,2,polygon,CHN_shapefile
+China,,Sichuan,CHN.26_1,1,polygon,CHN_shapefile
+China,Chengdu,Sichuan,CHN.26.2_1,2,polygon,CHN_shapefile
+China,,Xinjiang,CHN.28_1,1,polygon,CHN_shapefile
+China,Urumqi,Xinjiang,CHN.28.15_1,2,polygon,CHN_shapefile
+China,,Zhejiang,CHN.31_1,1,polygon,CHN_shapefile
+China ,Guangxi,Liuzhou,CHN.7.10_1,2,polygon,CHN_shapefile
+China ,Hunan,NA,CHN.14_1,1,polygon,CHN_shapefile
+Indonesia,,Bali,IDN.2_1,1,polygon,GADM_all
+Indonesia,Badung,Bali,IDN.2.1_1,2,polygon,GADM_all
+Indonesia,Bangli,Bali,IDN.2.2_1,2,polygon,GADM_all
+Indonesia,Tabanan,Bali,IDN.2.9_1,2,polygon,GADM_all
+Indonesia,,Banten,IDN.4_1,1,polygon,GADM_all
+Indonesia,Tangerang,Banten,IDN.4.8_1,2,polygon,GADM_all
+Indonesia,,Bengkulu,IDN.5_1,1,polygon,GADM_all
+Indonesia,,Central Jakarta,IDN.7_1,1,polygon,GADM_all
+Indonesia,,Central Java,IDN.10_1,1,polygon,GADM_all
+Indonesia,Boyolali,Central Java,IDN.10.5_1,2,polygon,GADM_all
+Indonesia,Grobogan,Central Java,IDN.10.9_1,2,polygon,GADM_all
+Indonesia,Kendal,Central Java,IDN.10.13_1,2,polygon,GADM_all
+Indonesia,Magelang,Central Java,IDN.10.15_1,2,polygon,GADM_all
+Indonesia,Semerang,Central Java,IDN.10.17_1,2,polygon,GADM_all
+Indonesia,Sragen,Central Java,IDN.10.29_1,2,polygon,GADM_all
+Indonesia,Sukoharjo,Central Java,IDN.10.30_1,2,polygon,GADM_all
+Indonesia,Wonogiri,Central Java,IDN.10.35_1,2,polygon,GADM_all
+Indonesia,,East Java,IDN.11_1,1,polygon,GADM_all
+Indonesia,Malang,East Java,IDN.11.22_1,2,polygon,GADM_all
+Indonesia,Surabaya,East Java,IDN.11.35_1,2,polygon,GADM_all
+Indonesia,Tulungagung,East Java,IDN.11.38_1,2,polygon,GADM_all
+Indonesia,,Greater Jakarta,IDN.7_1,1,polygon,GADM_all
+Indonesia,Tangerang,Greater Jakarta,IDN.4.8_1,2,polygon,GADM_all
+Indonesia,,Jakarta,IDN.7_1,1,polygon,GADM_all
+Indonesia,East Jakarta,Jakarta,IDN.7.4_1,2,polygon,GADM_all
+Indonesia,North Jakarta,Jakarta,IDN.7.5_1,2,polygon,GADM_all
+Indonesia,South Jakarta,Jakarta,IDN.7.3_1,2,polygon,GADM_all
+Indonesia,Tangerang,Jakarta,IDN.4.8_1,2,polygon,GADM_all
+Indonesia,West Jakarta,Jakarta,IDN.7.1_1,2,polygon,GADM_all
+Indonesia,,Lampung,IDN.17_1,1,polygon,GADM_all
+Indonesia,,North Sumatra,IDN.32_1,1,polygon,GADM_all
+Indonesia,Karo,North Sumatra,IDN.32.7_1,2,polygon,GADM_all
+Indonesia,,Nusa Tenggara Barat,IDN.20_1,1,polygon,GADM_all
+Indonesia,,Riau,IDN.24_1,1,polygon,GADM_all
+Indonesia,Bengkalis,Riau,IDN.24.1_1,2,polygon,GADM_all
+Indonesia,Pekanbaru,Riau,IDN.24.8_1,2,polygon,GADM_all
+Indonesia,Makassar,South Sulawesi,IDN.26.12_1,2,polygon,GADM_all
+Indonesia,,South Sumatra,IDN.31_1,1,polygon,GADM_all
+Indonesia,,West Java,IDN.9_1,1,polygon,GADM_all
+Indonesia,Bandung,West Java,IDN.9.2_1,2,polygon,GADM_all
+Indonesia,Bekasi,West Java,IDN.9.15_1,2,polygon,GADM_all
+Indonesia,Cikelet,West Java,,,point,
+Indonesia,Depok,West Java,IDN.9.10_1,2,polygon,GADM_all
+Indonesia,East Bekasi,West Java,IDN.9.4_1,2,polygon,GADM_all
+Indonesia,Garut,West Java,IDN.9.11_1,2,polygon,GADM_all
+Indonesia,Indramayu,West Java,IDN.9.12_1,2,polygon,GADM_all
+Indonesia,Karawang,West Java,IDN.9.13_1,2,polygon,GADM_all
+Indonesia,Kota Depok,West Java,IDN.9.10_1,2,polygon,GADM_all
+Indonesia,Subang,West Java,IDN.9.23_1,2,polygon,GADM_all
+Indonesia,Tasikmalaya,West Java,IDN.9.26_1,2,polygon,GADM_all
+Indonesia,,West Sumatra,IDN.30_1,1,polygon,GADM_all
+Indonesia,Bukit,West Sumatra,IDN.30.2_1,2,polygon,GADM_all
+Indonesia,Padang,West Sumatra,IDN.30.10_1,2,polygon,GADM_all
+Indonesia,Solok,West Sumatra,IDN.30.19_1,2,polygon,GADM_all
+Indonesia,,Yogyakarta,IDN.33_1,1,polygon,GADM_all
+Indonesia,Gunung Kidul,Yogyakarta,IDN.33.2_1,2,polygon,GADM_all
+Indonesia,,NA,,,polygon,GADM_all
+Laos,,Vientiane,LAO.14_1,1,polygon,GADM_all
+Laos,Pong Hong,Vientiane,LAO.14.6_1,2,polygon,GADM_all
+Myanmar,Kyaing Tone,Shan State,MMR.13.1_1,2,polygon,GADM_all
+Thailand,,Nong Bua Lam Phu,THA.34_1,1,polygon,GADM_all
+Thailand,Thap Khlo,Phichit,THA.44.10_1,2,polygon,GADM_all
+Thailand,,Uthai Thani,THA.74_1,1,polygon,GADM_all
+Vietnam,,,,,,
+Vietnam,Dien Trung,Ba Thuoc,,,point,
+Vietnam,Cho Moi,Bac Kan,VNM.4.4_1,2,polygon,VNM_shapefile
+Vietnam,Nhu Co,Bac Kan,,,point,
+Vietnam,,Bac Lieu,VNM.2_1,1,polygon,VNM_shapefile
+Vietnam,,Ben Tre,VNM.6_1,1,polygon,VNM_shapefile
+Vietnam,Thuan An,Binh Duong,VNM.9.9_1,2,polygon,VNM_shapefile
+Vietnam,,Dak Lak,VNM.15_1,1,polygon,VNM_shapefile
+Vietnam,Dien Bien Phu,Dien Bien,VNM.20.2_1,2,polygon,VNM_shapefile
+Vietnam,,Dong Nai,VNM.17_1,1,polygon,VNM_shapefile
+Vietnam,,Dong Thap,VNM.18_1,1,polygon,VNM_shapefile
+Vietnam,Chau Thanh,Dong Thap,VNM.18.3_1,2,polygon,VNM_shapefile
+Vietnam,,Gia Loc,VNM.22.4_1,2,polygon,VNM_shapefile
+Vietnam,,Ha Nam,VNM.28_1,1,polygon,VNM_shapefile
+Vietnam,Thanh Liem,Ha Nam,VNM.28.6_1,2,polygon,VNM_shapefile
+Vietnam,,Ha Tay,VNM.27_1,1,polygon,VNM_shapefile
+Vietnam,,Haiphong,VNM.23_1,1,polygon,VNM_shapefile
+Vietnam,,Hanoi,VNM.27_1,1,polygon,VNM_shapefile
+Vietnam,Soc Son,Hanoi,VNM.27.23_1,2,polygon,VNM_shapefile
+Vietnam,,Hau Giang,VNM.24_1,1,polygon,VNM_shapefile
+Vietnam,,Ho Chi Minh,VNM.25_1,1,polygon,VNM_shapefile
+Vietnam,Ninh Hoa,Khanh Hoa,VNM.32.7_1,2,polygon,VNM_shapefile
+Vietnam,,Kien Giang,VNM.33_1,1,polygon,VNM_shapefile
+Vietnam,,Lam Dong,VNM.37_1,1,polygon,VNM_shapefile
+Vietnam,,Long An,VNM.39_1,1,polygon,VNM_shapefile
+Vietnam,,Nam Dinh,VNM.40_1,1,polygon,VNM_shapefile
+Vietnam,Kim Son,Ninh Binh,VNM.42.3_1,2,polygon,VNM_shapefile
+Vietnam,Ninh Nhat,Ninh Binh,,,point,
+Vietnam,Cam Khe,Phu Tho,VNM.44.1_1,2,polygon,VNM_shapefile
+Vietnam,,Quang Binh,VNM.46_1,1,polygon,VNM_shapefile
+Vietnam,,Quang Ninh,VNM.49_1,1,polygon,VNM_shapefile
+Vietnam,Dam Ha,Quang Ninh,VNM.49.5_1,2,polygon,VNM_shapefile
+Vietnam,,Soc Trang,VNM.51_1,1,polygon,VNM_shapefile
+Vietnam,,Tay Ninh,VNM.53_1,1,polygon,VNM_shapefile
+Vietnam,,Thai Binh,VNM.55_1,1,polygon,VNM_shapefile
+Vietnam,,Thai Nguyen,VNM.56_1,1,polygon,VNM_shapefile
+Vietnam,,Thanh Hoa,VNM.57_1,1,polygon,VNM_shapefile
+Vietnam,Quan Hoa,Thanh Hoa,VNM.57.16_1,2,polygon,VNM_shapefile
+Vietnam,,Tien Giang,VNM.58_1,1,polygon,VNM_shapefile
+Vietnam,Cai Be,Tien Giang,VNM.58.1_1,2,polygon,VNM_shapefile
+Vietnam,,Tra Vinh,VNM.59_1,1,polygon,VNM_shapefile
+Vietnam,,Tuyen Quang,VNM.60_1,1,polygon,VNM_shapefile
+Vietnam,Son Duong,Tuyen Quang,VNM.60.5_1,2,polygon,VNM_shapefile
+Vietnam,,Vinh Phuc,VNM.62_1,1,polygon,VNM_shapefile
+Vietnam ,Bu Dang,Binh Phuoc,VNM.10.3_1,2,polygon,VNM_shapefile
+Vietnam ,,Dong Thap,VNM.18_1,1,polygon,VNM_shapefile

@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",864.192136063543,887.706954960979,"Rift Valley Fever"
+"Majority rule",789.75865027172,800.19275677449,"Rift Valley Fever"
+"Top-ranked",795.663652475151,809.366739503747,"Rift Valley Fever"
+"Any",790.777800115579,799.900974535408,"Rift Valley Fever"
+"Consensus",793.704172408154,807.444063927614,"Rift Valley Fever"

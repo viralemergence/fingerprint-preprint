@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",573.654923022508,582.144751841317,"Eastern equine encephalitis"
+"Majority rule",568.259124815572,579.075478867759,"Eastern equine encephalitis"
+"Top-ranked",566.60227710798,577.233554615166,"Eastern equine encephalitis"
+"Any",569.60030129612,580.915689190925,"Eastern equine encephalitis"
+"Consensus",575.373885036988,583.973221747656,"Eastern equine encephalitis"

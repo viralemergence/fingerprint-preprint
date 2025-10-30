@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",2828.45491297248,2915.52427578105,"Japanese encephalitis"
+"Majority rule",2279.59462155715,2332.45569758986,"Japanese encephalitis"
+"Top-ranked",2275.3358381505,2329.64541812562,"Japanese encephalitis"
+"Any",2279.59462155715,2332.45569758986,"Japanese encephalitis"
+"Consensus",2282.912847233,2341.8577101649,"Japanese encephalitis"

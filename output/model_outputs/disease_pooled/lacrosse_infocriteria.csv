@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",2426.69847169582,2456.74749793122,"LaCrosse encephalitis"
+"Majority rule",2404.08077518416,2434.54532910861,"LaCrosse encephalitis"
+"Top-ranked",2413.31047877722,2443.40189143417,"LaCrosse encephalitis"
+"Any",2403.41360116886,2432.7896159651,"LaCrosse encephalitis"
+"Consensus",2411.09422432998,2440.97193129223,"LaCrosse encephalitis"

@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",18686.9503027624,18713.4670302824,"West Nile virus disease"
+"Majority rule",18370.5513499033,18392.4688808938,"West Nile virus disease"
+"Top-ranked",18371.3231415803,18394.251353769,"West Nile virus disease"
+"Any",18350.9544202403,18373.9537699951,"West Nile virus disease"
+"Consensus",18500.2448251519,18520.4552084514,"West Nile virus disease"

@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",310.697311534162,319.161581849813,"Oropouche fever"
+"Majority rule",218.675348535257,217.920928247054,"Oropouche fever"
+"Top-ranked",214.619722399068,215.286936263111,"Oropouche fever"
+"Any",217.506755471054,216.650448569779,"Oropouche fever"
+"Consensus",245.750524114043,247.709753800827,"Oropouche fever"

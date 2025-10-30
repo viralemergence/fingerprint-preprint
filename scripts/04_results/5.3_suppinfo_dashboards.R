@@ -1,14 +1,16 @@
 
 # ====================== SUPP FIGURE: PARAMETER DASHBOARDS FOR ALL DISEASES =========================
 
-setwd("C:/Users/roryj/Documents/PhD/202011_fingerprint/fingerprint/")
-library(raster); library(rgdal); library(dplyr); library(magrittr); library(ggplot2); library(sf); library(reticulate); library(rgee)
-library(INLA); library(enmSdm)
+PATH = dirname(dirname(dirname(rstudioapi::getSourceEditorContext()$path)))
+setwd(PATH)
+
+library(raster); library(dplyr); library(magrittr); library(ggplot2); library(sf); library(reticulate); library(rgee)
+library(INLA);
 source("./scripts/00_plot_themes.R")
 
 # result location
-loc = "./output/model_outputs/disease_params/"
-ll = list.files(loc, pattern = "params.csv", full.names=TRUE)
+loc = "./output/model_outputs/disease_pooled/"
+ll = list.files(loc, pattern = "summary", full.names=TRUE)
 
 # read in results
 params = do.call(rbind.data.frame, lapply(ll, read.csv)) %>%
@@ -31,9 +33,11 @@ params = do.call(rbind.data.frame, lapply(ll, read.csv)) %>%
                 param = replace(param, param == "protected_areas", "Protected area"),
                 param = replace(param, param == "popdens_log", "Population density (log)")) %>%
   dplyr::filter(type != "Univariate") %>%
-  dplyr::mutate(type = ifelse(type == "Causal (broad)", "Hypothesis 1 (majority rule)", "Hypothesis 2 (top-ranked)"), 
+  dplyr::filter(type != "Consensus") %>%
+  dplyr::mutate(#type = ifelse(type == "Causal (broad)", "Hypothesis 1 (majority rule)", "Hypothesis 2 (top-ranked)"), 
                 #type = factor(type, levels=c("Causal (broad)", "Causal (strict)"), ordered=TRUE),
-                param = factor(param, levels=rev(unique(param)[order(unique(param))]), ordered=TRUE))
+                param = factor(param, levels=rev(unique(param)[order(unique(param))]), ordered=TRUE),
+                type = replace(type, type == "Any", "Any author"))
 
 params = params %>% left_join( read.csv("scripts/04_results/dz_abbrevs.csv") ) %>%
   dplyr::mutate(Disease = abbrev3) %>%
@@ -62,7 +66,7 @@ params$param = factor(params$param,
 px = params %>%
   ggplot() + 
   geom_hline(yintercept=0, lty=2) +
-  geom_point(aes(param, mean, group=type, col=type), position=position_dodge(width=0.8), size=1.5) + 
+  geom_point(aes(param, mean, group=type, col=type), position=position_dodge(width=1), size=1.1) + 
   geom_linerange(aes(param, ymin=lower, ymax=upper, group=type, col=type), position=position_dodge(width=0.8), size=0.6, alpha=0.7) +
   theme_minimal() + 
   coord_flip() +
@@ -73,15 +77,15 @@ px = params %>%
         axis.text.y = element_text(size=13),
         strip.text = element_text(size=18), 
         legend.position = c(0.75, 0.09),
-        legend.text = element_text(size=22), 
+        legend.text = element_text(size=35), 
         legend.title = element_blank()
   )
 
 ggsave(px,
-       file="./output/plots/SuppFigure_Dashboards_Aug23.jpg", 
+       file="./output/plots/SuppFigure_Dashboards.jpg", 
        device="jpg",
        units="in", 
-       width=18, height=19, 
+       width=17, height=21, 
        dpi=600)
   
   

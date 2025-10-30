@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",971.438005990583,1004.020087776,"Chikungunya"
+"Majority rule",665.416966860027,683.497699144156,"Chikungunya"
+"Top-ranked",660.275875752576,679.638182533619,"Chikungunya"
+"Any",668.26368232016,686.110481287777,"Chikungunya"
+"Consensus",667.381114802282,688.658672937052,"Chikungunya"

@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",37151.8393664695,37180.2281730017,"Lyme disease"
+"Majority rule",36921.5399344451,36952.4664149081,"Lyme disease"
+"Top-ranked",36745.8495495606,36779.0450437262,"Lyme disease"
+"Any",36703.9820586059,36738.9196172029,"Lyme disease"
+"Consensus",36975.0600717201,37004.4796660077,"Lyme disease"

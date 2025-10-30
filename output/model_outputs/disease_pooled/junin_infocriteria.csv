@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",928.656642067411,939.378247046034,"Argentine haemorrhagic fever"
+"Majority rule",766.63981903419,771.010705570101,"Argentine haemorrhagic fever"
+"Top-ranked",774.392516678033,779.607964974928,"Argentine haemorrhagic fever"
+"Any",766.63981903419,771.010705570101,"Argentine haemorrhagic fever"
+"Consensus",772.618724887287,778.095581490216,"Argentine haemorrhagic fever"

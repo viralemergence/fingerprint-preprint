@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",218.173439595445,231.562313682107,"Middle East respiratory syndrome (MERS)"
+"Majority rule",172.206072260385,176.708918987364,"Middle East respiratory syndrome (MERS)"
+"Top-ranked",172.621546804001,177.607580885869,"Middle East respiratory syndrome (MERS)"
+"Any",165.653115228639,169.734418420373,"Middle East respiratory syndrome (MERS)"
+"Consensus",171.103770887792,177.04278496552,"Middle East respiratory syndrome (MERS)"

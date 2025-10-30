@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",2807.09771625097,2840.17174703759,"Brazilian spotted fever"
+"Majority rule",2781.0656995165,2808.94439056795,"Brazilian spotted fever"
+"Top-ranked",2777.2056359575,2804.95312912633,"Brazilian spotted fever"
+"Any",2785.42964102028,2811.96332616179,"Brazilian spotted fever"
+"Consensus",2787.39021471646,2814.59080102034,"Brazilian spotted fever"

@@ -1,0 +1,58 @@
+OUTBREAK_ID,Country,Place,Month Start,Month End,Year Start,Year End,lat,long,Area_Type,Lat/Long Notes,Species
+1,Cote d'Ivoire,Tai Forest,10,11,1994,1994,5.8732,-7.34,point,Between 5.85 and 5.9 latitude and -7.367 and -7.317,Pan troglodytes
+2,Gabon,Mayiboth II (village),1,1,1996,1996,1.117,13.1,point,The excel coords represent the best guess for the location using GE and the article map. Please digitize article map for more accurate coords.,Pan t. troglodytes (chimpanzee)
+3,Gabon,Near Booue,7,7,1996,1996,-0.146386,11.574976,point,"The excel coords are an estimated location. Please use Fig 1 to digitize the 'forest (0°11’ South, 11°36' East) near Booué'",Chimpanzee
+4,Gabon,Lope (national park),9,9,1996,1996,-0.246844,11.563805,point,A small buffer zone around the excel coords as we can not be 100% the location. Excel coords agree with article map,Pan t. troglodytes (chimpanzee)
+5,Gabon & Congo ,Mendemba area to Lossi ,8,8,2001,2001,,,polygon,Lossi Animal Sanctuary centroid used as excel coords. A 70km radius needs to be drawn around the excel coords to include Mendemba (Mindemba in GE). See Fig 1 for detailed digitizing,Pan t. troglodytes (chimpanzee)
+6,Gabon & Congo ,Mendemba area to Lossi ,8,8,2001,2001,,,polygon,Lossi Animal Sanctuary centroid used as excel coords. A 70km radius needs to be drawn around the excel coords to include Mendemba (Mindemba in GE). See Fig 1 for detailed digitizing,Gorilla g. gorilla 
+7,Gabon & Congo ,Mendemba area to Lossi ,8,8,2001,2001,,,polygon,Lossi Animal Sanctuary centroid used as excel coords. A 70km radius needs to be drawn around the excel coords to include Mendemba (Mindemba in GE). See Fig 1 for detailed digitizing,Cephalophus dorsalis (bay duiker)
+8,Gabon,Zadie,11,11,2001,2001,0.7055,14.2747,point,Lat Long in paper,Gorilla gorilla
+10,Gabon,Medemba and neighbouring villages,12,12,2001,2001,,,polygon,40km radius as we can not be certain the distance to the surrounding villages,Great apes (Gorillas / chimpanzees)
+9,Gabon,Ekata,11,11,2001,2001,0.759924,14.336851,point,<1km,Gorilla gorilla
+11,Gabon,Zadie,2,2,2002,2002,1.1669,14.165,point,Lat Long in paper,Gorilla gorilla
+12,Gabon,Ekata,2,2,2002,2002,0.677046,14.289019,point,Near Ekata village in a forested area of Gabon'. Therefore a 10km radius around the excel coords. ,Bats
+13,Gabon,Zadie,3,3,2002,2002,0.731,14.2644,point,Lat Long in paper,Gorilla gorilla
+14,Gabon,Grand Etoumbi,3,3,2002,2002,1.134356,14.10044,point,10km radius around center point as unsure exact location.,Gorilla
+15,Gabon,Ekata,4,4,2002,2002,0.677046,14.289019,point,10km radius around center point as unsure exact location.,Gorilla
+16,Congo,Olloba (village),5,5,2002,2002,0.620494,14.377736,point,<1km in GE. (GE = Oloba),Pan t. troglodytes (chimpanzee)
+17,Congo,Lossi,12,12,2002,2002,0.2395,14.4938,point,Lat Long in paper,Gorilla gorilla
+18,Congo,Lossi,12,12,2002,2002,0.2354,14.4839,point,Lat Long in paper,Gorilla gorilla
+19,Congo,Lossi,12,12,2002,2002,0.2387,14.4885,point,Lat Long in paper,Pan troglodytes
+20,Congo,Lossi,12,12,2002,2002,0.2348,14.4852,point,Lat Long in paper,Gorilla gorilla
+21,Congo,Lossi,12,12,2002,2002,0.2346,14.4823,point,Lat Long in paper,Gorilla gorilla
+22,Congo,Lossi,12,12,2002,2002,0.2293,14.4892,point,Lat Long in paper,Cephalophus spp.
+23,Gabon,Mbomo,2,2,2003,2003,0.428663,14.696683,point,Around the epicenter of an Ebola outbreak in Mbomo village (RC)'. Therefore a 10km radius around the excel center point.,Bats
+24,Congo,Lossi,2,2,2003,2003,0.2987,14.5075,point,Lat Long in paper,Gorilla gorilla
+25,Congo,Lossi,2,2,2003,2003,,,polygon,Centroid of Lossi Animal Sanctuary - on google maps,Pan troglodytes
+26,Gabon,Mbomo,6,6,2003,2003,0.428663,14.696683,point,Around the epicenter of an Ebola outbreak in Mbomo village (RC)'. Therefore a 10km radius around the excel center point.,Bats
+27,Republic of Congo,Near Mbomo and Odzala National Park,6,6,2003,2003,,,polygon,"A polygon that is made up of a buffer zone around Mbomo and which includes the Odzala National Park (1.320629°,  14.845462°).",E. franqueti (bats)
+28,Republic of Congo,Near Mbomo and Odzala National Park,6,6,2003,2003,,,polygon,"A polygon that is made up of a buffer zone around Mbomo and which includes the Odzala National Park (1.320629°,  14.845462°).",H. monstrosus  (bats)
+29,Republic of Congo,Near Mbomo and Odzala National Park,6,6,2003,2003,,,polygon,"A polygon that is made up of a buffer zone around Mbomo and which includes the Odzala National Park (1.320629°,  14.845462°).",M. torquata (bats)
+30,Congo,Mbanza,6,6,2003,2003,0.6987,14.7029,point,Lat Long in paper,Gorilla gorilla
+31,Congo,Lokoue clearing,1,6,2004,2004,0.9106,15.1819,point,4km buffer zone around this centroid,Gorilla gorilla
+32,RoC,Lokoué,5,5,2004,2004,,,polygon,10km radius around center point as unsure exact location.,Gorilla
+33,Gabon,Haut-Ogooué (near Franceville),2,2,2005,2005,,,polygon,"A polygon around the paper coords needs to be drawn (radius 15km) as this includes the paper coords (-1.616667, 13.6)",E. franqueti (bats)
+34,Gabon,Haut-Ogooué (near Franceville),2,2,2005,2005,,,polygon,"A polygon around the paper coords needs to be drawn (radius 15km) as this includes the paper coords (-1.616667, 13.6)",M. torquata (bats)
+35,Gabon,Near Lambarene (Moyen Ogooué province),4,4,2005,2005,,,polygon,"Digitize from Fig 1  Pourrut 2007 and  Pourrut 2009. 30km radius around the excel center point. The second region in Gabon was located around Lambarene (lat 0 41  S; long 11 01  E), the largest town of the Moyen-Ogooue province in western Gabon and ?500 km from Mbomo. ",Bats
+36,Republic of Congo,Near Mbomo and Odzala National Park,5,5,2005,2005,,,polygon,"A polygon that is made up of a buffer zone around Mbomo and which includes the Odzala National Park (1.320629°,  14.845462°).",E. franqueti (bats)
+37,Republic of Congo,Near Mbomo and Odzala National Park,5,5,2005,2005,,,polygon,"A polygon that is made up of a buffer zone around Mbomo and which includes the Odzala National Park (1.320629°,  14.845462°).",H. monstrosus (bats)
+38,Republic of Congo,Near Mbomo and Odzala National Park,5,5,2005,2005,,,polygon,"A polygon that is made up of a buffer zone around Mbomo and which includes the Odzala National Park (1.320629°,  14.845462°).",M. torquata (bats)
+39,Congo,Odzala,6,6,2005,2005,,,polygon,Centroid of Odzala Kokoua National Park - on Google Maps,Gorilla gorilla
+40,Gabon,Near Tchibanga (Nyanga province),2,2,2006,2006,,,polygon,"Digitize from Fig 1  Pourrut 2007 and  Pourrut 2009. 30km radius around the excel center point. The third region was in Nyanga province, in south-west Gabon (near Tchibanga 2°51' S; 11°01' E)",Bats
+41,Republic of Congo,Near Mbomo and Odzala National Park,5,5,2006,2006,,,polygon,"A polygon that is made up of a buffer zone around Mbomo and which includes the Odzala National Park (1.320629°,  14.845462°).",E. franqueti (bats)
+42,Republic of Congo,Near Mbomo and Odzala National Park,5,5,2006,2006,,,polygon,"A polygon that is made up of a buffer zone around Mbomo and which includes the Odzala National Park (1.320629°,  14.845462°).",H. monstrosus (bats)
+43,Republic of Congo,Near Mbomo and Odzala National Park,5,5,2006,2006,,,polygon,"A polygon that is made up of a buffer zone around Mbomo and which includes the Odzala National Park (1.320629°,  14.845462°).",M. torquata (bats)
+44,Gabon,Haut-Ogooué (near Franceville),10,10,2006,2006,,,polygon,"A polygon around the paper coords needs to be drawn (radius 15km) as this includes the paper coords (-1.616667, 13.6)",E. franqueti (bats)
+45,Ghana,Sagyimase,5,5,2007,2007,6.234686,-0.518694,point,GE used to locate place,Epomops franqueti (bat)
+46,Ghana,Sagyimase,5,5,2007,2007,6.234686,-0.518694,point,GE used to locate place,Hypsignathus monstrosus (bat)
+47,Ghana,Adoagyiri,5,5,2007,2007,5.816016,-0.354044,point,Coords taken from Wikipedia (http://en.wikipedia.org/wiki/Adoagyiri),Epomophorus gambianus (bat)
+48,Ghana,Adoagyiri,5,5,2007,2007,5.816016,-0.354044,point,Coords taken from Wikipedia (http://en.wikipedia.org/wiki/Adoagyiri),Epomops franqueti (bat)
+49,Ghana,Oyibi,6,6,2007,2007,5.812958,-0.117916,point,GE used to locate place,Epomophorus gambianus (bat)
+50,Ghana,Accra,1,1,2008,2008,,,polygon,Polygon around the city of Accra,Eidolon helvum (tree-roosting fruit bat)
+51,Gabon,Haut-Ogooué (near Franceville),3,3,2008,2008,,,polygon,"A polygon around the paper coords needs to be drawn (radius 15km) as this includes the paper coords (-1.616667, 13.6)",E. franqueti (bats)
+52,Central African Republic,Salo- Adibori,5,6,1994,1994,3.51667,16.033,point,Lat Long in paper,Mus spp.
+53,Central African Republic,Salo- Adibori,5,6,1994,1994,3.51667,16.033,point,Lat Long in paper,Praomys spp.
+54,Central African Republic,Batouri,10,1,1998,1999,3.933,16.933,point,Lat Long in paper,Sylvisorex ollula
+55,Central African Republic,Bohou,6,6,1998,1998,8.4167,20.633,point,Lat Long in paper,Praomys spp.
+56,Zambia,Serenje district,12,12,2006,2013,,,polygon,Polygon of admin 2 district,Eidolon helvum
+57,Zambia,Ndola district,12,12,2010,2013,,,polygon,Polygon of admin 2 district,Eidolon helvum

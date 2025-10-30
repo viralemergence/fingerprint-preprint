@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",488.562412519155,493.856758984264,"Jamestown Canyon virus disease"
+"Majority rule",493.350559635529,497.521961500765,"Jamestown Canyon virus disease"
+"Top-ranked",487.185620737835,491.848780450209,"Jamestown Canyon virus disease"
+"Any",493.343391751905,496.758649820567,"Jamestown Canyon virus disease"
+"Consensus",491.689127159206,496.311737965868,"Jamestown Canyon virus disease"

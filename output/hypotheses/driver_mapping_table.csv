@@ -1,0 +1,19 @@
+Driver,covar_name
+Biodiversity intactness,biodiv_intact
+Cropland (land cover),crop_cover
+Cropland expansion (land conversion),crop_expansion
+Deforestation (land conversion),forest_loss
+Forest (land cover),forest_cover
+Invasive species,
+Landscape fragmentation,evi_dissimilarity
+Livestock density,livestock_log
+Mining (land cover),mining
+Precipitation change (increase),precip_change
+Protected area (land cover),protected_areas
+Proximity to hospitals or clinics,health_travel_log
+Socioeconomic vulnerability,social_vulnerability
+Temperature change (increase),tmean_change
+Urban area (land cover),urban_cover
+Urbanization (land conversion),urban_expansion
+Wildlife hunting,hunting
+Wildlife trade and live animal markets,

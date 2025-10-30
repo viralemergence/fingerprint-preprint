@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",762.785158207242,778.943913795247,"Monkeypox"
+"Majority rule",654.051499482692,665.20964464183,"Monkeypox"
+"Top-ranked",649.429807393013,660.635747991072,"Monkeypox"
+"Any",654.051499482692,665.20964464183,"Monkeypox"
+"Consensus",649.24470137274,660.359675587461,"Monkeypox"

@@ -1,0 +1,5 @@
+"model","waic","dic","Disease"
+"Baseline",577.860643818699,595.80262850308,"Influenza H5N1"
+"Majority rule",526.643044928883,535.792249428962,"Influenza H5N1"
+"Top-ranked",528.27405994795,537.98317758145,"Influenza H5N1"
+"Any",530.680811064593,539.55115133397,"Influenza H5N1"

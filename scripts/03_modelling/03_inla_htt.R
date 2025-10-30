@@ -3,7 +3,7 @@
 # ================ Runs individual disease models using INLA geospatial regression ===================
 
 # Wrapper script to run separate models for all individual diseases (geospatial logistic regression using R-INLA)
-# Fitting with scaled linear effect of HTT; uses datasets built in 02_inla_per_disease (for Figure 5)
+# These models are used to estimate health travel time effects in hours (for Figure 5)
 # Individual disease scripts stored in "./scripts/03_modelling/inla_htt/"
 
 # setup objects

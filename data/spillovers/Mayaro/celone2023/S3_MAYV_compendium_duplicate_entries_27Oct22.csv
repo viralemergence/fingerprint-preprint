@@ -1,0 +1,73 @@
+Location_ID,Author_Year,Ref_Number,Year_MAYV_Start,Year_MAYV_End,Host_Type,Adm0,Adm1,Adm2,Finer_Res,Location_Type,Admin_Level,X_Coord,Y_Coord
+ADM0_01,"Powers, 2006",PMID: 16968922,1957,1957,Arthropod,Trinidad,N/A,N/A,N/A,Administrative polygon,0,N/A,N/A
+ADM0_05,Talarmin 1998,PMID: 9749643,1995,1996,Human,French Guiana,N/A,N/A,Littoral,Administrative Polygon,0,N/A,N/A
+ADM0_05,Talarmin 1998,PMID: 9749643,1995,1996,Human,French Guiana,N/A,N/A,Bas Maroni,Administrative Polygon,0,N/A,N/A
+ADM0_05,Talarmin 1998,PMID: 9749643,1995,1996,Human,French Guiana,N/A,N/A,Haut Maroni,Administrative Polygon,0,N/A,N/A
+ADM0_05,Talarmin 1998,PMID: 9749643,1995,1996,Human,French Guiana,N/A,N/A,Bas Oyapock,Administrative Polygon,0,N/A,N/A
+ADM0_05,Talarmin 1998,PMID: 9749643,1995,1996,Human,French Guiana,N/A,N/A,Haut Oyapock,Administrative Polygon,0,N/A,N/A
+ADM0_05,"Friedrich-Jänicke, 2014",PMID: 24960052,2013,2013,Human,French Guiana,N/A,N/A,Administrative polygon,Administrative Polygon,0,N/A,N/A
+ADM0_06,ProMED,Archive no: 20180518.5804085,2018,2018,Human,Peru,N/A,N/A,N/A,Administrative Polygon,0,N/A,N/A
+ADM0_06,"Buckley, 1972",PMID: 4538189,1965,1965,Human,Peru,N/A,N/A,N/A,Administrative Polygon,0,N/A,N/A
+ADM0_07,"Groot, 1964",DOI: dx.doi.org/10.18257/raccefyn.565,1956,1961,Human,Colombia,N/A,N/A,N/A,Administrative Polygon,0,N/A,N/A
+ADM0_07,"Groot, 1964",DOI: dx.doi.org/10.18257/raccefyn.565,1956,1961,Human,Colombia,N/A,N/A,N/A,Administrative Polygon,0,N/A,N/A
+ADM0_09,"Taylor, 1967",N/A,1964,1964,Arthropod,Brazil,N/A,N/A,N/A,Administrative polygon,0,N/A,N/A
+ADM0_09,"Taylor, 1967",N/A,1964,1964,Animal,Brazil,N/A,N/A,N/A,Administrative polygon,0,N/A,N/A
+ADM0_09,"Bronzoni, 2005",PMID: 15695666,2001,2003,Human,Brazil,N/A,N/A,N/A,Administrative polygon,0,N/A,N/A
+ADM0_10,"Hassing, 2010",PMID: 20600300,2008,2008,Human,Suriname,N/A,N/A,N/A,Administrative polygon,0,N/A,N/A
+ADM1_03,"Srihongse, 1973",PMID: 4198483,1966,1967,Human,Panama,Darien,N/A,N/A,Administrative polygon,1,-77.88333,8.08333
+ADM1_05,"Degallier, 1992",Available at: https://www.researchgate.net/publication/32977559_Modifications_of_arbovirus_transmission_in_relation_to_construction_of_dams_in_Brazilian_Amazonia,1974,1988,Human,Brazil,Para,N/A,N/A,Administrative polygon,1,-53,-4
+ADM1_05,"Black, 1974",PMID: 4370011,1965,1972,Human,Brazil,Para,N/A,Kuben Kran Kegn,Administrative Polygon,1,-53,-4
+ADM1_05,Niederman 1967,PMID: 6058390,1964,1964,Human,Brazil,Para,N/A,N/A,Administrative Polygon,1,-53,-4
+ADM1_05,"Pinheiro, 1974",Available at: https://iris.paho.org/handle/10665.2/27094,1971,1973,Human,Brazil,Para,N/A,N/A,Administrative Polygon,1,-53,-4
+ADM1_05,"Pinheiro, 1977",Available at: https://patua.iec.gov.br/handle/iec/352,1973,1974,Human,Brazil,Para,N/A,N/A,Administrative Polygon,1,-53,-4
+ADM1_05,"Estofolete, 2016",PMID: 27812665,2014,2014,Human,Brazil,Para,N/A,N/A,Administrative polygon,1,-53,-4
+ADM1_05,"Slegers, 2014",PMID: 24856445,2013,2013,Human,Brazil,Para,N/A,N/A,Administrative polygon,1,-53,-4
+ADM1_05,"Powers, 2006",PMID: 16968922,1978,1978,Animal,Brazil,Para,N/A,N/A,Administrative polygon,1,-53,-4
+ADM1_05,Casseb 2010,Available at: http://repositorio.ufpa.br/jspui/bitstream/2011/4760/1/Tese_SoroprevalenciaAnticorposPadronizacao.pdf,2007,2007,Animal,Brazil,Para,N/A,N/A,Administrative polygon,1,-53,-4
+ADM1_06,"Llagonne-Barets, 2016",PMID: 26921736,2013,2013,Human,French Guiana,Cayenne,N/A,N/A,Administrative polygon,1,-52.5,4
+ADM1_08,Niederman 1967,PMID: 6058390,1964,1964,Human,Brazil,Amazonas,N/A,N/A,Administrative Polygon,1,-64.5,-3.75
+ADM1_08,Receveur 2010,PMID: 20460093,2009,2009,Human,Brazil,Amazonas,N/A,N/A,Administrative polygon,0,N/A,N/A
+ADM1_09,Niederman 1967,PMID: 6058390,1964,1964,Human,Brazil,Mato Grosso,N/A,N/A,Administrative Polygon,1,-56,-13
+ADM1_09,"Perin, 2021",DOI: 10.15406/jbmoa.2021.09.00300,2017,2017,Human,Brazil,Mato Grosso,N/A,N/A,Administrative Polygon,1,-56,-13
+ADM1_09,ProMED,Archive no: 20000804.3277,2000,2000,Human,Brazil,Mato Grosso,N/A,N/A,Administrative Polygon,1,-56,-13
+ADM1_10,"Brazil MOH, 1980",Available at: https://iris.paho.org/handle/10665.2/38423,1979,1980,Human,Brazil,Goias,N/A,N/A,Administrative Polygon,1,-49.63623,-15.58071
+ADM1_10,ProMED,Archive no: 20150705.3485723,2015,2015,Human,Brazil,Goias,N/A,N/A,Administrative polygon,1,-49.63623,-15.58071
+ADM1_10,ProMED,Archive no: 20150705.3485723,1987,1987,Human,Brazil,Goias,N/A,N/A,Administrative polygon,1,-49.63623,-15.58071
+ADM1_10,Niederman 1967,PMID: 6058390,1964,1964,Human,Brazil,Goias,N/A,N/A,Administrative Polygon,1,-49.63623,-15.58071
+ADM1_10,"Pinheiro, 1974",Available at: https://patua.iec.gov.br/handle/iec/350,1973,1973,Human,Brazil,Goias,N/A,N/A,Administrative polygon,1,-49.63623,-15.58071
+ADM1_17,Neumayr 2012,PMID: 22469145,2011,2011,Human,Peru,San Martin,N/A,N/A,Administrative Polygon,1,-76.83333,-7
+ADM1_18,"Siles, 2015",ASTMH Abstract,2010,2014,Human,Peru,Loreto,N/A,N/A,Administrative Polygon,1,-74.5,-4
+ADM1_19,Figueiredo 1989,PMID: 2562487,1987,1987,Human,Bolivia,Santa Cruz,N/A,N/A,Administrative Polygon,1,-61.5,-17.5
+ADM2_02,Forshey 2010,PMID: 20706628,2000,2007,Human,Peru,Loreto,Alto Amazonas,Yurimaguas,Administrative Polygon,2,-76.102290,-5.812760
+ADM2_02,"Ministerio de Salud del Perú, 2005",Available at: http://www.scielo.org.pe/scielo.php?script=sci_arttext&pid=S1726-46342005000300003,2000,2001,Human,Peru,Loreto,Alto Amazonas,Yurimaguas Hospital,Administrative polygon,2,-76.102290,-5.812760
+ADM2_03,PAHO Report 2000,Available at: https://iris.paho.org/bitstream/handle/10665.2/41047/atlanta_july2000.pdf?sequence=1&isAllowed=y,1994,2000,Human,Peru,Loreto,Maynas,Iquitos,Administrative Polygon,2,-73.66667,-3
+ADM2_03,"Tesh, 1999",PMID: 10028074,1995,1998,Human,Peru,Loreto,Maynas,N/A,Administrative Polygon,2,-73.66667,-3
+ADM2_03,Forshey 2010,PMID: 20706628,2000,2007,Human,Peru,Loreto,Maynas,Iquitos,Administrative Polygon,2,-73.66667,-3
+ADM2_03,"Ministerio de Salud del Perú, 2005",Available at: http://www.scielo.org.pe/scielo.php?script=sci_arttext&pid=S1726-46342005000300003,2000,2001,Human,Peru,Loreto,Maynas,San Juan Health Center,Administrative polygon,2,-73.66667,-3
+ADM2_04,Forshey 2010,PMID: 20706628,2000,2007,Human,Peru,Junin,Chanchamayo,La Merced,Administrative Polygon,2,-75.31667,-11.05
+ADM2_05,Boletin Epidemiologico No 43 - 2018,Available at: http://www.diresacusco.gob.pe/inteligencia/epidemiologia/boletines/2018/43-2018.pdf,2018,2018,Human,Peru,Madre de Dios,Tambopata,Puerto Maldonado ,Administrative Polygon,2,-70.05006,-12.19948
+ADM2_05,Forshey 2010,PMID: 20706628,2000,2007,Human,Peru,Madre de Dios,Tambopata,Puerto Maldonado,Administrative Polygon,2,-70.05006,-12.19948
+ADM2_07,"WHO, 2020",Available at: https://www.who.int/csr/don/25-october-2020-mayaro-fever-french-guiana-france/en/,2020,2020,Human,French Guiana,Cayenne,Matoury,N/A,Administrative Polygon,2,-52.32355,4.84921
+ADM2_14,"Pilatti, 2016",Available at: http://www.repositoriodigital.univag.com.br/index.php/biomedicina/article/view/66,2011,2016,Human,Brazil,Mato Grosso,Cuiaba,Cuiaba,Administrative Polygon,2,-55.89023,-15.41924
+ADM2_15,"Vieira, 2015",PMID: 25817238,2011,2012,Human,Brazil,Mato Grosso,Sinop,Sinop,Administrative Polygon,2,-55.44017,-11.76411
+ADM2_15,"Vieira, 2020",PMID: 32604785,2014,2018,Human,Brazil,Mato Grosso,Sinop,Sinop,Administrative Polygon,2,-55.44017,-11.76411
+ADM2_19,PAHO Epidemiological Alert Mayaro Fever 2019,Available at: https://www.paho.org/hq/index.php?option=com_docman&view=download&category_slug=mayaro-fever-2323&alias=48374-1-may-2019-mayaro-fever-epidemiological-alert&Itemid=270&lang=en,2019,2019,Human,Ecuador,Guayas,Guayaquil,N/A,Administrative Polygon,2,-79.88333,-2.2
+ADM2_22,ProMED,Archive no: 20220128.8701133,2021,2021,Human,Brazil,Para,Benevides,N/A,Administrative Polygon,2,-48.28873,-1.32453
+ADM2_25,"da Costa, 2017",PMID: 28739422,2011,2013,Human,Brazil,Goias,Goiania,N/A,Administrative Polygon,2,-49.25993,-16.64019
+ADM2_25,"Brazil MOH, 2016",No longer available,2016,2016,Human,Brazil,Goias,Goiania,N/A,Administrative polygon,2,-49.25993,-16.64019
+ADM2_51,ProMED,"Archive no: 20190518.6474507
+",2016,2016,Human,Brazil,Rio de Janeiro,Niteroi,N/A,Administrative polygon,2,-43.08391,-22.91715
+ADM2_63,"News article, 2019",Available at: https://www.eurekalert.org/pub_releases/2019-12/fda-mtt112919.php,2019,2019,Human,Brazil,São Paulo,São Carlos,N/A,Administrative Polygon,2,-47.87473,-21.9065
+ADM3_08,"Galindo, 1966",PMID: 4380043,1959,1962,Arthropod,Panama,Bocas del Toro,Changuinola,Almirante,Administrative polygon,3,-82.41187,9.30591
+CP_01,"de Figueiredo, 2004",PMID: 15765597,1999,1999,Human,Brazil,Amazonas,Manaus,Manaus,Custom polygon ,-999,-60.025000,-3.101940
+CP_01,"Mourao, 2012",PMID: 21923266,2007,2008,Human,Brazil,Amazonas,Manaus,Manaus,Custom polygon ,-999,-60.025000,-3.101940
+CP_02,"Hoze, 2020",PMID: 32503971,2017,2017,Human,French Guiana,Cayenne,Camopi,Trois-Sauts,Custom Polygon,-999,-52.87724,2.24504
+CP_12,"Perin, 2021",DOI: 10.15406/jbmoa.2021.09.00300,2017,2017,Human,Brazil,Mato Grosso ,Várzea Grande,Várzea Grande,Custom Polygon,-999,-56.1325,-15.6467
+CP_12,Zuchi 2014,PMID: 25141284,2012,2012,Human,Brazil,Mato Grosso ,Várzea Grande,Várzea Grande,Custom Polygon,-999,-56.1325,-15.6467
+CP_21,"Abrantes, 2020",Available at: https://repositorio.bc.ufg.br/tede/handle/tede/10517,2017,2018,Human,Brazil,Goias,Goiania,Goiania,Custom Polygon,-999,-49.25389,-16.67861
+P_102,Boletin Epidemiologico No 43 - 2018,Available at: http://www.diresacusco.gob.pe/inteligencia/epidemiologia/boletines/2020/02-2020.pdf,2019,2019,Human,Peru,Quispicanchis,Camanti,Santa Isidora,Point,-999,-70.765614,-13.130992
+P_20,"WHO, 2020",Available at: https://www.who.int/csr/don/25-october-2020-mayaro-fever-french-guiana-france/en/,2020,2020,Human,French Guiana,Cayenne,Cayenne,N/A,Point,-999,-52.312786,4.924992
+P_20,"Hoze, 2020",PMID: 32503971,2017,2017,Human,French Guiana,Cayenne,Cayenne,N/A,Point,-999,-52.312786,4.924992
+P_21,"Hoze, 2020",PMID: 32503971,2017,2017,Human,French Guiana,Cayenne,Remire-Montjoly,Remire-Montjoly,Point,-999,-52.280396,4.887332
+P_52,GenBank,GenBank: KY618135,1991,1991,Human,Brazil,Para,Belem,N/A,Point,-999,-48.4553,-1.3597
+P_56,GenBank,GenBank: KY618131,1978,1978,Human,Brazil,Para,Santarem,N/A,Point ,-999,-54.7312,-2.4991

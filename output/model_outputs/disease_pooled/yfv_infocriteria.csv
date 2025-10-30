@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",1933.49287375088,1998.64103084933,"Yellow fever"
+"Majority rule",1750.41879113278,1796.52136997773,"Yellow fever"
+"Top-ranked",1748.60447289819,1794.96849424163,"Yellow fever"
+"Any",1750.46333632721,1796.86734900782,"Yellow fever"
+"Consensus",1753.04892877554,1800.84386235315,"Yellow fever"

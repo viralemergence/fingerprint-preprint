@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",2705.05627602392,2738.12518053288,"Chagas disease (acute)"
+"Majority rule",2641.721234115,2671.59913926345,"Chagas disease (acute)"
+"Top-ranked",2651.93047144474,2682.52473654482,"Chagas disease (acute)"
+"Any",2647.58535990789,2677.25477365123,"Chagas disease (acute)"
+"Consensus",2650.10749717602,2680.29610359298,"Chagas disease (acute)"

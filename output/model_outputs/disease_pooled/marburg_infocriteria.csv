@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",70.6205948318042,72.5449602210279,"Marburg virus disease"
+"Majority rule",50.1747834317384,50.3155756810371,"Marburg virus disease"
+"Top-ranked",48.3886266783055,49.3593597499889,"Marburg virus disease"
+"Any",49.0757384201088,49.3438208564269,"Marburg virus disease"
+"Consensus",66.3604245444026,67.4416343446999,"Marburg virus disease"

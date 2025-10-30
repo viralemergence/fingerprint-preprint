@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",627.712703360491,635.38737021313,"Powassan virus disease"
+"Majority rule",627.616571918314,633.301338993112,"Powassan virus disease"
+"Top-ranked",628.182439554278,633.172706424325,"Powassan virus disease"
+"Any",631.108815485616,635.719001564971,"Powassan virus disease"
+"Consensus",627.61656602943,633.301323273145,"Powassan virus disease"

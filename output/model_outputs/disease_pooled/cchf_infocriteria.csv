@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",2599.61987803638,2657.23491317794,"Crimean-Congo haemorrhagic fever"
+"Majority rule",1886.87494637622,1909.98897031869,"Crimean-Congo haemorrhagic fever"
+"Top-ranked",1878.47609963567,1903.25463969478,"Crimean-Congo haemorrhagic fever"
+"Any",1886.87494637622,1909.98897031869,"Crimean-Congo haemorrhagic fever"
+"Consensus",1875.33178916817,1902.19808375179,"Crimean-Congo haemorrhagic fever"

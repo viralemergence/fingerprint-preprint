@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",1264.96327092968,1283.22670339277,"Lassa fever"
+"Majority rule",1102.45251337579,1110.77763908928,"Lassa fever"
+"Top-ranked",1103.243535159,1112.81114439136,"Lassa fever"
+"Any",1101.86906510518,1110.26381431952,"Lassa fever"
+"Consensus",1103.02371139692,1112.84468818917,"Lassa fever"

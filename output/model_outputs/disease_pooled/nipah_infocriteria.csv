@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",102.151523058842,104.989586113217,"Nipah virus disease"
+"Majority rule",111.326019455192,110.348547432822,"Nipah virus disease"
+"Top-ranked",109.912712592803,109.752410654102,"Nipah virus disease"
+"Any",111.325726006732,110.348253339373,"Nipah virus disease"
+"Consensus",107.045876236004,105.57456741691,"Nipah virus disease"

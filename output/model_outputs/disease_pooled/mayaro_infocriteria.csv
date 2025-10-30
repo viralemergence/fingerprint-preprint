@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",523.143127607842,542.118481655157,"Mayaro virus disease"
+"Majority rule",464.646077551296,471.847160411749,"Mayaro virus disease"
+"Top-ranked",464.980619982712,473.342131064519,"Mayaro virus disease"
+"Any",465.729585149304,474.174137197895,"Mayaro virus disease"
+"Consensus",489.105500770348,499.171786995837,"Mayaro virus disease"

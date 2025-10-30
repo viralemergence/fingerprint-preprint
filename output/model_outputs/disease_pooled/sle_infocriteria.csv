@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",557.957672544875,570.597903071022,"St. Louis encephalitis"
+"Majority rule",530.237412332088,537.480341995206,"St. Louis encephalitis"
+"Top-ranked",524.363721176437,532.063728056868,"St. Louis encephalitis"
+"Any",530.237412332088,537.480341995206,"St. Louis encephalitis"
+"Consensus",526.011595432777,534.217704165535,"St. Louis encephalitis"

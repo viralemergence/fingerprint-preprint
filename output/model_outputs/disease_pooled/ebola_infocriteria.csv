@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",136.853011610778,141.262655402812,"Ebola virus disease"
+"Majority rule",143.185409647701,144.348624746578,"Ebola virus disease"
+"Top-ranked",138.522527658843,140.917531040943,"Ebola virus disease"
+"Any",145.349425340262,145.886741487573,"Ebola virus disease"
+"Consensus",135.930942059476,139.029027242018,"Ebola virus disease"

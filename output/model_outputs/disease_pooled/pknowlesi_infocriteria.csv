@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",488.026235998243,498.004387185736,"Plasmodium knowlesi malaria"
+"Majority rule",457.513337202561,466.153993928895,"Plasmodium knowlesi malaria"
+"Top-ranked",470.248440645078,479.226565979844,"Plasmodium knowlesi malaria"
+"Any",443.609552573382,452.060537813918,"Plasmodium knowlesi malaria"
+"Consensus",471.806316133073,482.035863796304,"Plasmodium knowlesi malaria"

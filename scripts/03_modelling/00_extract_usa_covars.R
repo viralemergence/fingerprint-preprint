@@ -5,7 +5,9 @@
 # timesaver when modelling later
 
 # setup objects
-setwd("C:/Users/roryj/Documents/PhD/202011_fingerprint/fingerprint/")
+PATH = dirname(dirname(dirname(rstudioapi::getSourceEditorContext()$path)))
+setwd(PATH)
+
 library(raster); library(rgdal); library(dplyr); library(magrittr); library(ggplot2); library(sf); library(reticulate); library(rgee)
 library(INLA); library(enmSdm)
 source("./scripts/00_plot_themes.R")

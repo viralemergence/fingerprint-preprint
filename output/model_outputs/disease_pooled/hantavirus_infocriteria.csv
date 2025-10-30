@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",2070.82989958363,2108.06895238179,"Hantavirus cardiopulmonary syndrome"
+"Majority rule",2040.85984797384,2069.93475781636,"Hantavirus cardiopulmonary syndrome"
+"Top-ranked",2042.71772286249,2071.49433186311,"Hantavirus cardiopulmonary syndrome"
+"Any",2041.58588702053,2070.77148466765,"Hantavirus cardiopulmonary syndrome"
+"Consensus",2061.99365747718,2095.96494435083,"Hantavirus cardiopulmonary syndrome"

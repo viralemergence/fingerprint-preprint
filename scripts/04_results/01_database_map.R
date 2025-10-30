@@ -1,8 +1,9 @@
 
 # ================== Map and description of entire fingerprint database ==================
 
-setwd("C:/Users/roryj/Documents/Research/projects_current/202011_fingerprint/fingerprint/")
-library(raster); library(rgdal); library(dplyr); library(magrittr); library(ggplot2); library(sf)
+PATH = dirname(dirname(dirname(rstudioapi::getSourceEditorContext()$path)))
+setwd(PATH)
+library(raster); library(dplyr); library(magrittr); library(ggplot2); library(sf)
 source("./scripts/00_plot_themes.R")
 
 library(patchwork); library(ggplot2)
@@ -43,7 +44,7 @@ sp = sp[ -which(sp$Disease == "Crimean-Congo haemorrhagic fever" & sp$Source == 
 sp$Disease[ sp$Disease == "Mayaro fever" ] = "Mayaro virus disease"
 
 # arbonet
-arbo = read.csv("C:/Users/roryj/Documents/Research/projects_current/202011_fingerprint/arbonet/fingerprint_formatted/spillovers_arbonet.csv") %>%
+arbo = read.csv("C:/Users/roryj/Documents/Research/202011_fingerprint/arbonet/fingerprint_formatted/spillovers_arbonet.csv") %>%
   dplyr::filter(Presentation == "All cases") %>%
   dplyr::filter(!Disease %in% c("Zika", "Chikungunya"))
 arbo$Longitude = arbo$Longitude + sample(seq(-0.01, 0.01, length.out=500), nrow(arbo), replace=TRUE)
@@ -89,8 +90,12 @@ p1 = as.data.frame(table(sp$abbrev )) %>%
   geom_point(aes(Freq, abbrev, fill=dz_class), size=3, pch=23, color="grey20", stroke=0.35) +
   theme_classic() + 
   scale_x_log10() +
-  scale_fill_manual(values = colorRampPalette(MetBrewer::met.brewer("Archambault", 9))(4), name="Transmission") + 
-  scale_color_manual(values = colorRampPalette(MetBrewer::met.brewer("Archambault", 9))(4), name="Transmission") + 
+  # scale_fill_manual(values = colorRampPalette(MetBrewer::met.brewer("Archambault", 9))(4), name="Transmission") + 
+  # scale_color_manual(values = colorRampPalette(MetBrewer::met.brewer("Archambault", 9))(4), name="Transmission") + 
+  # scale_fill_manual(values = pals::brewer.seqseq2()[c(8, 7, 3, 4)], name="Transmission") +
+  # scale_color_manual(values = pals::brewer.seqseq2()[c(8, 7, 3, 4)], name="Transmission") +
+  scale_fill_manual(values = pals::parula()[ c(7, 23, 1, 15)], name="Transmission") +
+  scale_color_manual(values = pals::parula()[ c(7, 23, 1, 15)], name="Transmission") +
   xlab("Total outbreak events") + ylab("Disease") +
   theme(legend.position = "none",
         axis.title = element_text(size=15),
@@ -98,6 +103,8 @@ p1 = as.data.frame(table(sp$abbrev )) %>%
         axis.text.x = element_text(size=13),
         legend.text = element_text(size=13),
         legend.title = element_text(size=14))
+
+pals::parula()[ c(1, 7, 14, 22)]
 
 # records over time
 time = as.data.frame(table(sp$Year, sp$dz_class)) %>%
@@ -119,7 +126,8 @@ p2 = time %>%
   geom_area(aes(Year, Freq, group=dz_class), color="grey20", fill=NA, size=0.15, alpha=0.6) +
   #geom_vline(xintercept=1985, lty=2, size=0.6, alpha=0.7, color="grey20") +
   scale_x_continuous(labels=seq(1950, 2020, by=10), breaks=seq(1950, 2020, by=10)) +
-  scale_fill_manual(values = colorRampPalette(MetBrewer::met.brewer("Archambault", 9))(4), name="Transmission") + 
+  #scale_fill_manual(values = colorRampPalette(MetBrewer::met.brewer("Archambault", 9))(4), name="Transmission") + 
+  scale_fill_manual(values = pals::parula()[ c(7, 23, 1, 15)], name="Transmission") +
   theme_classic() + 
   theme(legend.position=c(0.3, 0.8),
         axis.title = element_text(size=15),
@@ -154,17 +162,17 @@ sp2 = st_as_sf(sp2)
 st_crs(sp2) = st_crs(ne)
 sp2 = st_transform(sp2, robinson)
 
-spills = ggplot() + 
-  geom_sf(data=ne2, fill="grey94", color="grey75", size=0.2) + 
-  maptheme + 
-  geom_sf(data=sp2, aes(col=abbrev), size=0.065, alpha=0.4) + 
-  guides(colour = guide_legend(override.aes = list(size=5), ncol=2, alpha=1)) + 
-  theme(legend.position="right", legend.title = element_blank(), 
-        legend.text = element_text(size=11)) +
-  scale_color_manual(values = rev(pals::tol.rainbow(n=n_distinct(sp2$Disease))))
+# spills = ggplot() + 
+#   geom_sf(data=ne2, fill="grey94", color="grey75", size=0.2) + 
+#   maptheme + 
+#   geom_sf(data=sp2, aes(col=abbrev), size=0.065, alpha=0.35) + 
+#   guides(colour = guide_legend(override.aes = list(size=5, alpha=0.8), ncol=2)) + 
+#   theme(legend.position="right", legend.title = element_blank(), 
+#         legend.text = element_text(size=11)) +
+#   scale_color_manual(values = rev(pals::tol.rainbow(n=n_distinct(sp2$Disease))))
 
 #  save
-ggsave(spills, file="./output/plots/Figure1_map.jpg", device="jpg", units="in", dpi=900, width=12, height=5)
+#ggsave(spills, file="./output/plots/Figure1_map.jpg", device="jpg", units="in", dpi=900, width=12, height=5)
 
 # map and time series figure are combined separately
 
@@ -172,8 +180,8 @@ ggsave(spills, file="./output/plots/Figure1_map.jpg", device="jpg", units="in", 
 spills2 = ggplot() + 
   geom_sf(data=ne2, fill="grey94", color="grey75", size=0.2) + 
   maptheme + 
-  geom_sf(data=sp2, aes(col=abbrev), size=0.065, alpha=0.4) + 
-  guides(colour = guide_legend(override.aes = list(size=5), ncol=8, alpha=1)) + 
+  geom_sf(data=sp2, aes(col=abbrev), size=0.065, alpha=0.35) + 
+  guides(colour = guide_legend(override.aes = list(size=5, alpha=0.8), ncol=8)) + 
   theme(legend.position=c(0.55, -0.12), legend.title = element_blank(), 
         legend.text = element_text(size=10.5)) +
   scale_color_manual(values = rev(pals::tol.rainbow(n=n_distinct(sp2$Disease))))

@@ -1,0 +1,6 @@
+"model","waic","dic","Disease"
+"Baseline",1208.3077147888,1207.57819859687,"Melioidosis"
+"Majority rule",527.806618141984,525.510013227473,"Melioidosis"
+"Top-ranked",524.554167978245,521.62348384098,"Melioidosis"
+"Any",527.976644331206,524.49897227748,"Melioidosis"
+"Consensus",535.636284683745,535.907926917023,"Melioidosis"
